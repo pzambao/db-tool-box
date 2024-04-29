@@ -2,7 +2,7 @@
 
 SELECT
   user,
-  date_trunc('month', transaction_date) AS period,
+  date_trunc('month', transaction_date) AS period, 
   SUM(transaction_value) AS total_earnings
 FROM
   transaction_table
